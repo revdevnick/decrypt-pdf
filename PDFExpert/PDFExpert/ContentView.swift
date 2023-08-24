@@ -18,6 +18,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
+                Image(systemName: "doc")
+                    .font(.largeTitle)
+                    .padding(.bottom, 25)
                 Button {
                     self.showActionSheet.toggle()
                 } label: {
@@ -38,6 +42,7 @@ struct ContentView: View {
                         showActionSheet = false
                     }
                 }
+                Spacer()
             }
             .padding()
         }
